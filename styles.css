@@ -44,3 +44,11 @@ section:not(:last-child) {
 #about-me-text {
   padding-top: 10px;
 }
+
+.carousel-item img {
+  max-height: 500px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
