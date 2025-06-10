@@ -34,7 +34,7 @@
         >
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link href=" #about>About Me</a>
+              <a class="nav-link" href= "#about">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#work">Previous Work</a>
@@ -50,24 +50,24 @@
       </div>
     </nav>
 
-    <header class="bg-light text-center py-5 mb-4 border-bottom">
-      <div class="container">
-        <h1 class="display-4 fw-bold text-dark">Satvik Mudgal</h1>
-        <p class="lead"><strong>
+    <header class="bg-light text-center py-5 mb-5 border-bottom">
+      <div class="container-fluid rounded">
+        <h1 class="display-4 border-bottom" id="main-header">Satvik Mudgal</h1>
+        <p class="lead accent-lead"><strong>
             Research Intern &bull; Computer Science Student &bull; Portland State University
             </strong>
         </p>
     </header>
 
     <section id="about" class="text-dark text-center py-5">
-      <div class="container">
-        <h2 class="display-5 fw-bold mb-4">About Me</h2>
+      <div class="container py-4 px-4 rounded mt-3">
+        <h2 class="about-me-header display-5 fw-bold mb-4">About Me</h2>
         <div class="row justify-content-center align-items-center">
             <img src="images/profile.jpg" alt="Satvik Mudgal" placeholder="Profile Picture" class="img-fluid rounded-circle" style="max-width: 300px;"/> 
         </div>
         <div>
             <p></p>
-            <p class="lead mx-auto" style="max-width: 800px;" id="about-me-text">
+            <p class="mx-auto" style="max-width: 800px;" id="about-me-text"><strong>
                 Hey! I'm Satvik, a technology enthusiast and a Computer Science Student at Portland State University.
                 My journey in Computer Science has taken me through some incredibly exciting areas, from diving deep into 
                 Web Development, to understanding how computers truly work in Operating Systems. I've also spent time building 
@@ -77,259 +77,278 @@
                 to real-world problems. I love the challenge of solving complex issues and am always eager to learn more.
 
                 When I'm not coding, you can find me rowing a boat on the river, playing badminton, or in the woods hiking.
-            </p>
+            </strong></p>
         </div>
       </div>
     </section>
 
     <section id="work" class="bg-light text-dark text-center py-5">
-      <div class="container">
-        <h2 class="text-center mb-5 display-5 fw-bold">Previous Work</h2>
-        <div class="card border-primary mb-4 shadow-sm mb-4">
-            <div class="card-body">
-                <h4 class="card-title">Database and Internet Privacy Lab at PSU</h4>
-                <p class="card-text mb-4">
-                    My research focused on Fine-Grained Access Control in dynamic IoT environments. Access Control for databases
-                    is a crucial aspect of security, and improving the efficiency of access control policies is essential for
-                    maintaining the integrity and confidentiality of data. I worked on developing a system that generates workloads 
-                    for an algorithm known as Sieve. The results gave us a solid insight into the performance of the algorithm, and the 
-                    parameters that increase the enforcement cost of the algorithm. 
-                </p>
-                <p class="card-text">
-                    <strong>Learn More about Sieve:</strong>
-                </p>
+      <div class="work-outer container-fluid" id="work">
+        <div class="work-inner container py-4 px-4 rounded">
+            <h2 class="work-header text-center mb-5 display-5 fw-bold">Previous Work</h2>
+            <div class="card border-primary mb-4 shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Database and Internet Privacy Lab at PSU</h4>
+                    <p class="card-text mb-4">
+                        My research focused on Fine-Grained Access Control in dynamic IoT environments. Access Control for databases
+                        is a crucial aspect of security, and improving the efficiency of access control policies is essential for
+                        maintaining the integrity and confidentiality of data. I worked on developing a system that generates workloads 
+                        for an algorithm known as Sieve. The results gave us a solid insight into the performance of the algorithm, and the 
+                        parameters that increase the enforcement cost of the algorithm. 
+                    </p>
+                    <p class="card-text">
+                        <strong>Learn More about Sieve:</strong>
+                    </p>
 
-                <div class="mt-3">
-                    <a href="https://diprlab.github.io/" target="_blank" class="btn btn-outline-primary btn-sm me-2">Lab Website</a>
-                    <a href="https://diprlab.github.io/project/sieve/" target="_blank" class="btn btn-outline-primary btn-sm me-2">Sieve Project</a>
-                    <a href="https://github.com/DIPrLab/Sieve" target="_blank" class="btn btn-outline-primary btn-sm">Sieve GitHub Repository</a>
+                    <div class="mt-3">
+                        <a href="https://diprlab.github.io/" target="_blank" class="btn btn-outline-primary btn-sm me-2">Lab Website</a>
+                        <a href="https://diprlab.github.io/project/sieve/" target="_blank" class="btn btn-outline-primary btn-sm me-2">Sieve Project</a>
+                        <a href="https://github.com/DIPrLab/Sieve" target="_blank" class="btn btn-outline-primary btn-sm">Sieve GitHub Repository</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card border-primary shadow-sm mb-4">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="images/stem_showcase.jpg" class="img-fluid" style="max-width: 300px; max-height: 300px;" alt="STEM Showcase Photo" />
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h4 class="card-title">STEM Research Showcase Poster Competition - 3rd Place</h4>
-                        <p class="card-text">
-                            Presented my findings on Scalable Access Control for dynamic IoT environments in a Research Poster Competition at the STEM Research Showcase 2025 at
-                            Portland State University. It was an honor to show the Dean, the Department Chair, faculty members, and all
-                            participants the work I had done in the past year.
-                        </p>
-                        <div class="mt-3">
-                            <a href="https://diprlab.github.io/post/05-06-25-satvik-urmp/" target="_blank" class="btn btn-outline-primary btn-sm">STEM Showcase Information</a>
+            <div class="card border-primary shadow-sm mb-4">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/stem_showcase.jpg" class="img-fluid" style="max-width: 300px; max-height: 300px;" alt="STEM Showcase Photo" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">STEM Research Showcase Poster Competition - 3rd Place</h4>
+                            <p class="card-text">
+                                Presented my findings on Scalable Access Control for dynamic IoT environments in a Research Poster Competition at the STEM Research Showcase 2025 at
+                                Portland State University. It was an honor to show the Dean, the Department Chair, faculty members, and all
+                                participants the work I had done in the past year.
+                            </p>
+                            <div class="mt-3">
+                                <a href="https://diprlab.github.io/post/05-06-25-satvik-urmp/" target="_blank" class="btn btn-outline-primary btn-sm">STEM Showcase Information</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card border-primary shadow-sm mb-4" id="presentation-card">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="images/psu_research_fair.jpg" class="img-fluid" style="max-width: 300px; max-height: 300px;" alt="STEM Showcase Photo" />
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h4 class="card-title">Presentation at The New Student Orientation - 2024</h4>
-                        <p class="card-text">
-                            I had the opportunity to present my research on Fine-Grained Access Control in dynamic IoT environments at the New Student Orientation.
-                            Many of the participants were new students, and it was a great experience to be able to inspire them to join our work in the lab.
-                            I also got to learn about various other research projects and opportunities available in the University through faculty members who 
-                            I presented my research to at the event.
-                        </p>
+            <div class="card border-primary shadow-sm mb-4" id="presentation-card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/psu_research_fair.jpg" class="img-fluid" style="max-width: 300px; max-height: 300px;" alt="STEM Showcase Photo" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">Presentation at The New Student Orientation - 2024</h4>
+                            <p class="card-text">
+                                I had the opportunity to present my research on Fine-Grained Access Control in dynamic IoT environments at the New Student Orientation.
+                                Many of the participants were new students, and it was a great experience to be able to inspire them to join our work in the lab.
+                                I also got to learn about various other research projects and opportunities available in the University through faculty members who 
+                                I presented my research to at the event.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center mt-5">
-            <a href="documents/sieve_poster.pdf" target="_blank" class="btn btn-primary btn-lg shadow px-5 py-3">View Full Poster (PDF)</a>
+            <div class="text-center mt-5">
+                <a href="documents/sieve_poster.pdf" target="_blank" class="btn border-primary bg-light shadow px-5 py-3">View Full Poster (PDF)</a>
+            </div>
         </div>
       </div>
     </section>
 
     <section id="projects" class="bg-light text-dark text-center py-5">
-        <div class="container">
-            <h2 class="display-5 fw-bold mb-5">Notable Projects</h2>
-
-            <div class="accordion" id="project-accordion">
-
-                <div class="accordian-item">
-                    <h2 class="accordion-header" id="project1-header">
-                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#proj1" aria-expanded="false" aria-controls="proj1">
-                            Custom Language Interpreter (CS358)
-                        </button>
-                    </h2>
-
-                    <div class="accordion-collapse collapse" id="proj1" aria-labelledby="project1-header" data-bs-parent="#project-accordion">
-                        <div class="accordion-body text-start">
-                            <p>Built a recursive-descent parser and interpreter for a custom language supporting arithmetic operators, variable scoping, string operations, boolean and comparison operators.
-                            As part of the Principles of Programming Languages Course, I got to learn a lot about how languages are built and what the fundamental 
-                            logic behind most programming languages are. It also gave me an intuitive idea about how compilers and interpreters are built using other compilers and pre-built 
-                            functionalities.
-
-                            <br /><br />
-                            The program relies on Context-Free Grammar (CFGs) provided by lark expressions to convert standard language expressions 
-                            into raw abstract syntax trees and also produces a pretty printed output of the expression showing how precedence operators work 
-                            with the custom language. It can also be extended to support many other operators and domain specific languages.
-                            The domain I chose for the project was String operations.
-    
-                            </p>
-
-                            <p><strong>Below is an Abstract Syntax Tree for adding/subtracting two numbers in a custom language</strong></p>
-                            <div class="col-md-4">
-                                <img src="images/interpreter1.jpg" alt="Interpreter Screenshot" style="max-width: 800px; max-height: 600px;"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="projects-outer container-fluid">
+            <h2 class="display-5 fw-bold mb-5" id="projects-header">Notable Projects</h2>
+            <div class="projects-inner container py-4 px-4 rounded">
 
                 <div class="accordion" id="project-accordion">
 
-                <div class="accordian-item">
-                    <h2 class="accordion-header" id="project2-header">
-                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#proj2" aria-expanded="false" aria-controls="proj2">
-                            Airline Application using Java and Android (CS410)
-                        </button>
-                    </h2>
+                    <div class="accordian-item">
+                        <h2 class="accordion-header" id="project1-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#proj1" aria-expanded="false" aria-controls="proj1">
+                                Custom Language Interpreter (CS358)
+                            </button>
+                        </h2>
 
-                    <div class="accordion-collapse collapse" id="proj2" aria-labelledby="project2-header" data-bs-parent="#project-accordion">
-                        <div class="accordion-body text-start">
-                            Developed an Android application maintained in Java. Used extensive Java APIs to leverage Android file system, and
-                            Android Studio's constraints and layouts. This was an incremental build that supported various stages of a software development 
-                            lifecycle. Thus, the android application can be operated through the web using HTTP requests and responses, and can also launch a 
-                            command-line application equipped with a pretty printer that can create an Airline, add flights, and ensure schedules match.
+                        <div class="accordion-collapse collapse" id="proj1" aria-labelledby="project1-header" data-bs-parent="#project-accordion">
+                            <div class="accordion-body text-start">
+                                <p>Built a recursive-descent parser and interpreter for a custom language supporting arithmetic operators, variable scoping, string operations, boolean and comparison operators.
+                                As part of the Principles of Programming Languages Course, I got to learn a lot about how languages are built and what the fundamental 
+                                logic behind most programming languages are. It also gave me an intuitive idea about how compilers and interpreters are built using other compilers and pre-built 
+                                functionalities.
 
-                            <br /><br />
-                            The skills I obtained in Object-Oriented Programming as a result of this project have been immense. Inheritance, heirarchies, and 
-                            data sharing among objects, was extremely crucial for the correct implementation of this project. As a result, it taught me how to
-                            design accessible, easy to use apps for mobile, while teaching me what the Android back-end consists of. This was also a solid foundation
-                            for learning about emulators and tools such as Android Studio. 
+                                <br /><br />
+                                The program relies on Context-Free Grammar (CFGs) provided by lark expressions to convert standard language expressions 
+                                into raw abstract syntax trees and also produces a pretty printed output of the expression showing how precedence operators work 
+                                with the custom language. It can also be extended to support many other operators and domain specific languages.
+                                The domain I chose for the project was String operations.
+        
+                                </p>
 
-                            <br /><br />
-                            <strong>Repository:</strong> Private - available upon request
-
-                            <div class="carousel slide mt-4" id="androidCarousel" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="images/android1.jpg" class="d-block w-100 max-height: 400px; max-width: 200px;" alt="Android Demo Screenshot 1" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/android2.jpg" class="d-block w-100 max-height: 400px; max-width: 200px;" alt="Android Demo Screenshot 2" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/android3.jpg" class="d-block w-100 max-height: 400px; max-width: 200px;" alt="Android Demo Screenshot 3" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/android4.jpg" class="d-block w-100 max-height: 400px; max-width: 200px;" alt="Android Demo Screenshot 4" />
-                                    </div>
+                                <p><strong>Below is an Abstract Syntax Tree for adding/subtracting two numbers in a custom language</strong></p>
+                                <div class="col-md-4">
+                                    <img src="images/interpreter1.jpg" alt="Interpreter Screenshot" class="img-fluid" style="max-height: 600px;"/>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#androidCarousel" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#androidCarousel" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion" id="project-accordion">
+
+                    <div class="accordian-item">
+                        <h2 class="accordion-header" id="project2-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#proj2" aria-expanded="false" aria-controls="proj2">
+                                Airline Application using Java and Android (CS410)
+                            </button>
+                        </h2>
+
+                        <div class="accordion-collapse collapse" id="proj2" aria-labelledby="project2-header" data-bs-parent="#project-accordion">
+                            <div class="accordion-body text-start">
+                                Developed an Android application maintained in Java. Used extensive Java APIs to leverage Android file system, and
+                                Android Studio's constraints and layouts. This was an incremental build that supported various stages of a software development 
+                                lifecycle. Thus, the android application can be operated through the web using HTTP requests and responses, and can also launch a 
+                                command-line application equipped with a pretty printer that can create an Airline, add flights, and ensure schedules match.
+
+                                <br /><br />
+                                The skills I obtained in Object-Oriented Programming as a result of this project have been immense. Inheritance, heirarchies, and 
+                                data sharing among objects, was extremely crucial for the correct implementation of this project. As a result, it taught me how to
+                                design accessible, easy to use apps for mobile, while teaching me what the Android back-end consists of. This was also a solid foundation
+                                for learning about emulators and tools such as Android Studio. 
+
+                                <br /><br />
+                                <strong>Repository:</strong> Private - available upon request
+
+                                <div class="carousel slide mt-4" id="androidCarousel" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="images/android1.jpg" class="d-block w-100 max-height: 400px; max-width: 200px;" alt="Android Demo Screenshot 1" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/android2.jpg" class="d-block w-100 max-height: 400px; max-width: 200px;" alt="Android Demo Screenshot 2" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/android3.jpg" class="d-block w-100 max-height: 400px; max-width: 200px;" alt="Android Demo Screenshot 3" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/android4.jpg" class="d-block w-100 max-height: 400px; max-width: 200px;" alt="Android Demo Screenshot 4" />
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#androidCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#androidCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordian-item">
+                        <h2 class="accordion-header" id="project3-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#proj3" aria-expanded="false" aria-controls="proj3">
+                                Arvik - A reimplementation of the Linux Archiving Functionality (CS333)
+                            </button>
+                        </h2>
+
+                        <div class="accordion-collapse collapse" id="proj3" aria-labelledby="project3-header" data-bs-parent="#project-accordion">
+                            <div class="accordion-body text-start">
+                                Linux's archiving functionality (ar command) is a great tool for sending files, storing backups, and managing project 
+                                directories. In my Operating Systems course, I implemented this functionality using archiving tools from linux and using 
+                                file functionalities like stat, lseek, and open/close to allow binary files to be read and written. This reimplementation extended 
+                                the functionality to process the archiving in a deterministic or non-deterministic mode, with selective verbosity.
+
+                                <br /><br />
+                                This was one of the projects that taught me the most about memory management, linux utilities, the importance of file information,
+                                file metadata, and most importantly how different filetypes can be condensed into a simple representation. I also used a Makefile to 
+                                ease the processing required.
+                                
+                                This reimplementation is interoperable with the Linux 'ar' utility.
+
+                                <br /><br />
+                                <strong>Repository:</strong> Private - available upon request
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="accordian-item">
-                    <h2 class="accordion-header" id="project3-header">
-                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#proj3" aria-expanded="false" aria-controls="proj3">
-                            Arvik - A reimplementation of the Linux Archiving Functionality (CS333)
-                        </button>
-                    </h2>
-
-                    <div class="accordion-collapse collapse" id="proj3" aria-labelledby="project3-header" data-bs-parent="#project-accordion">
-                        <div class="accordion-body text-start">
-                            Linux's archiving functionality (ar command) is a great tool for sending files, storing backups, and managing project 
-                            directories. In my Operating Systems course, I implemented this functionality using archiving tools from linux and using 
-                            file functionalities like stat, lseek, and open/close to allow binary files to be read and written. This reimplementation extended 
-                            the functionality to process the archiving in a deterministic or non-deterministic mode, with selective verbosity.
-
-                            <br /><br />
-                            This was one of the projects that taught me the most about memory management, linux utilities, the importance of file information,
-                            file metadata, and most importantly how different filetypes can be condensed into a simple representation. I also used a Makefile to 
-                            ease the processing required.
-                            
-                            This reimplementation is interoperable with the Linux 'ar' utility.
-
-                            <br /><br />
-                            <strong>Repository:</strong> Private - available upon request
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>    
         </div>
     </section>
 
-    <section id="contact" class="container my-5">
-        <h2 class="text-center mb-4 display-5 fw-bold">Contact</h2>
+    <section id="contact" class="contact-section text-dark text-center py-5 rounded">
+        <div class="contact-inner container py-4 px-4 rounded">
+            <h2 class="text-center mb-4 display-5 fw-bold" id="contact-header">Contact</h2>
 
-        <div class="accordion shadow-sm" id="contactAccordion">
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="contactHeader">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFormCollapse" aria-expanded="false" aria-controls="contactFormCollapse">
-            Click to Contact Me
-            </button>
-        </h2>
-        <div id="contactFormCollapse" class="accordion-collapse collapse" aria-labelledby="contactHeader" data-bs-parent="#contactAccordion">
-            <div class="accordion-body">
-            <form id="contact-form">
-                <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required />
-                </div>
-                <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required />
-                </div>
-                <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
+            <div class="accordion shadow-sm" id="contactAccordion">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="contactHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFormCollapse" aria-expanded="false" aria-controls="contactFormCollapse">
+                Send Me A Message
+                </button>
+            </h2>
+            <div id="contactFormCollapse" class="accordion-collapse collapse" aria-labelledby="contactHeader" data-bs-parent="#contactAccordion">
+                <div class="accordion-body">
+                <form id="contact-form">
+                    <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required />
+                    </div>
+                    <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required />
+                    </div>
+                    <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
 
-                <fieldset class="mb-4">
-                <legend class="col-form-label pt-0">Preferred Pronouns</legend>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pronoun" id="she" value="she/her" />
-                    <label class="form-check-label" for="she">She/her</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pronoun" id="he" value="he/him" />
-                    <label class="form-check-label" for="he">He/him</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pronoun" id="they" value="they/them" />
-                    <label class="form-check-label" for="they">They/them</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pronoun" id="prefer" value="prefer not to say" />
-                    <label class="form-check-label" for="prefer">Prefer not to say</label>
-                </div>
-                </fieldset>
+                    <fieldset class="mb-4">
+                    <legend class="col-form-label pt-0">Preferred Pronouns</legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="pronoun" id="she" value="she/her" />
+                        <label class="form-check-label" for="she">She/her</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="pronoun" id="he" value="he/him" />
+                        <label class="form-check-label" for="he">He/him</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="pronoun" id="they" value="they/them" />
+                        <label class="form-check-label" for="they">They/them</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="pronoun" id="prefer" value="prefer not to say" />
+                        <label class="form-check-label" for="prefer">Prefer not to say</label>
+                    </div>
+                    </fieldset>
 
-                <div class="row mb-3">
-                <div class="col-6">
-                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    <div class="row mb-3">
+                    <div class="col-6">
+                        <button type="submit" class="btn border-primary bg-light w-100">Submit</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="reset" class="btn text-dark border-primary bg-light w-100">Reset</button>
+                    </div>
+                    </div>
+                </form>
                 </div>
-                <div class="col-6">
-                    <button type="reset" class="btn btn-secondary w-100">Reset</button>
-                </div>
-                </div>
-            </form>
             </div>
-        </div>
+            </div>
         </div>
     </div>
+    
     </section>
+    
+    <footer class="mt-5 py-4">
+        <h3 class="footer-header" style="padding-left: 50px;">Need To Reach Out?</h3>
+        <br/>
+        <div class="footer-div rounded">
+            <p style="padding: 20px;">
+                LinkedIn: <a href="https://www.linkedin.com/in/satvikmudgal" target="_blank">Send Me A Request</a> | 
+                GitHub: <a href="https://github.com/satvikmudgal" target="_blank">Send Me A Pull Request</a> | 
+                Email: <a href="mailto:satvik@pdx.edu">Send Me An Email</a>
+            </p>
+        </div>
+    </footer>
   </body>
 </html>
