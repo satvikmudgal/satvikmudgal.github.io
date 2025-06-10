@@ -28,7 +28,7 @@ header,
 #work,
 #projects,
 #contact {
-  background: linear-gradient(135deg, #c2c4c8, rgb(10, 4, 13));
+  background: linear-gradient(135deg, #6e80b5, rgb(10, 4, 13));
 }
 
 .accent-lead {
@@ -69,22 +69,40 @@ header,
   display: block;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* visible dark background */
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+}
+
 .button,
 .btn,
 input[type="button"],
 input[type="submit"] {
-  color: rgb(254, 136, 123) !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.button:hover,
+.btn:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  color: rgb(255, 144, 144) !important;
 }
 
 footer {
-  background: linear-gradient(135deg, #505358, #788ae5);
+  background: linear-gradient(135deg, #6e80b5, rgb(10, 4, 13));
   padding: 5rem 1rem;
   margin: 0 auto;
 }
 
 .footer-div {
-  background-color: antiquewhite;
-  color: rgb(249, 143, 131);
+  background-color: rgba(255, 255, 255, 0.562);
+  color: rgb(0, 0, 0);
   max-width: fit-content;
   align-content: center;
 }
