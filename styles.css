@@ -71,8 +71,7 @@ header,
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5); /* visible dark background */
-  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
 }
 
 .carousel-control-prev,
