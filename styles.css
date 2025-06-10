@@ -16,20 +16,23 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: #788ae5;
+  color: #9d9ea1;
 }
 
 .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
 
-header {
-  background: linear-gradient(135deg, #727477, #788ae5);
+header,
+#about,
+#work,
+#projects,
+#contact {
+  background: linear-gradient(135deg, #c2c4c8, rgb(10, 4, 13));
 }
 
-#about {
-  background: linear-gradient(135deg, #787a7f, #788ae5);
-  color: darkslategray;
+.accent-lead {
+  color: rgb(237, 186, 186);
 }
 
 .about-me-header,
@@ -38,16 +41,11 @@ header {
 #main-header,
 #projects-header,
 #contact-header {
-  color: rgb(255, 139, 126);
+  color: rgb(246, 124, 102);
 }
 
 #about-me-text {
-  color: rgb(234, 225, 224);
-}
-
-.work-outer {
-  background: linear-gradient(135deg, #505358, #788ae5);
-  padding: 1rem;
+  color: rgb(255, 169, 159);
 }
 
 .work-inner {
@@ -57,11 +55,6 @@ header {
 
 #about-me-text {
   padding-top: 10px;
-}
-
-.projects-outer {
-  background: linear-gradient(135deg, #505358, #788ae5);
-  padding: 3rem 1rem;
 }
 
 .projects-inner {
@@ -74,11 +67,6 @@ header {
   object-fit: contain;
   margin: 0 auto;
   display: block;
-}
-
-.contact-section {
-  background: linear-gradient(135deg, #505358, #788ae5);
-  padding: 5rem 1rem;
 }
 
 .button,
