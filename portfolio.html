@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <script defer src="js/script.js"></script>
+    <script defer src="portfolio.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -116,7 +116,7 @@
                     <div class="card-body">
                         <h4 class="card-title">STEM Research Showcase Poster Competition - 3rd Place</h4>
                         <p class="card-text">
-                            Presented my findings on Scalable Access Control for dynamic IoT environments at the STEM Research Showcase 2025 at
+                            Presented my findings on Scalable Access Control for dynamic IoT environments in a Research Poster Competition at the STEM Research Showcase 2025 at
                             Portland State University. It was an honor to show the Dean, the Department Chair, faculty members, and all
                             participants the work I had done in the past year.
                         </p>
@@ -150,5 +150,154 @@
             <a href="documents/sieve_poster.pdf" target="_blank" class="btn btn-primary btn-lg shadow px-5 py-3">View Full Poster (PDF)</a>
         </div>
       </div>
+    </section>
+
+    <section id="projects" class="bg-light text-dark text-center py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5">Notable Projects</h2>
+
+            <div class="accordion" id="project-accordion">
+
+                <div class="accordian-item">
+                    <h2 class="accordion-header" id="project1-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#proj1" aria-expanded="false" aria-controls="proj1">
+                            Custom Language Interpreter (CS358)
+                        </button>
+                    </h2>
+
+                    <div class="accordion-collapse collapse" id="proj1" aria-labelledby="project1-header" data-bs-parent="#project-accordion">
+                        <div class="accordion-body text-start">
+                            Built a recursive-descent parser and interpreter for a custom language supporting arithmetic operators, variable scoping, string operations, boolean and comparison operators.
+                            As part of the Principles of Programming Languages Course, I got to learn a lot about how languages are built and what the fundamental 
+                            logic behind most programming languages are. It also gave me an intuitive idea about how compilers and interpreters are built using other compilers and pre-built 
+                            functionalities.
+
+                            <br /><br />
+                            The program relies on Context-Free Grammar (CFGs) provided by lark expressions to convert standard language expressions 
+                            into raw abstract syntax trees and also produces a pretty printed output of the expression showing how precedence operators work 
+                            with the custom language. It can also be extended to support many other operators and domain specific languages.
+                            The domain I chose for the project was String operations.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" id="project-accordion">
+
+                <div class="accordian-item">
+                    <h2 class="accordion-header" id="project2-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#proj2" aria-expanded="false" aria-controls="proj2">
+                            Airline Application using Java and Android (CS410)
+                        </button>
+                    </h2>
+
+                    <div class="accordion-collapse collapse" id="proj2" aria-labelledby="project2-header" data-bs-parent="#project-accordion">
+                        <div class="accordion-body text-start">
+                            Developed an Android application maintained in Java. Used extensive Java APIs to leverage Android file system, and
+                            Android Studio's constraints and layouts. This was an incremental build that supported various stages of a software development 
+                            lifecycle. Thus, the android application can be operated through the web using HTTP requests and responses, and can also launch a 
+                            command-line application equipped with a pretty printer that can create an Airline, add flights, and ensure schedules match.
+
+                            <br /><br />
+                            The skills I obtained in Object-Oriented Programming as a result of this project have been immense. Inheritance, heirarchies, and 
+                            data sharing among objects, was extremely crucial for the correct implementation of this project. As a result, it taught me how to
+                            design accessible, easy to use apps for mobile, while teaching me what the Android back-end consists of. This was also a solid foundation
+                            for learning about emulators and tools such as Android Studio. 
+
+                            <br /><br />
+                            <strong>Repository:</strong> Private - available upon request
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordian-item">
+                    <h2 class="accordion-header" id="project3-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#proj3" aria-expanded="false" aria-controls="proj3">
+                            Arvik - A reimplementation of the Linux Archiving Functionality (CS333)
+                        </button>
+                    </h2>
+
+                    <div class="accordion-collapse collapse" id="proj3" aria-labelledby="project3-header" data-bs-parent="#project-accordion">
+                        <div class="accordion-body text-start">
+                            Linux's archiving functionality (ar command) is a great tool for sending files, storing backups, and managing project 
+                            directories. In my Operating Systems course, I implemented this functionality using archiving tools from linux and using 
+                            file functionalities like stat, lseek, and open/close to allow binary files to be read and written. This reimplementation extended 
+                            the functionality to process the archiving in a deterministic or non-deterministic mode, with selective verbosity.
+
+                            <br /><br />
+                            This was one of the projects that taught me the most about memory management, linux utilities, the importance of file information,
+                            file metadata, and most importantly how different filetypes can be condensed into a simple representation. I also used a Makefile to 
+                            ease the processing required.
+                            
+                            This reimplementation is interoperable with the Linux 'ar' utility.
+
+                            <br /><br />
+                            <strong>Repository:</strong> Private - available upon request
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4 display-5 fw-bold">Contact</h2>
+
+        <div class="accordion shadow-sm" id="contactAccordion">
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="contactHeader">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFormCollapse" aria-expanded="false" aria-controls="contactFormCollapse">
+            Click to Contact Me
+            </button>
+        </h2>
+        <div id="contactFormCollapse" class="accordion-collapse collapse" aria-labelledby="contactHeader" data-bs-parent="#contactAccordion">
+            <div class="accordion-body">
+            <form id="contact-form">
+                <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required />
+                </div>
+                <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required />
+                </div>
+                <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <fieldset class="mb-4">
+                <legend class="col-form-label pt-0">Preferred Pronouns</legend>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="pronoun" id="she" value="she/her" />
+                    <label class="form-check-label" for="she">She/her</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="pronoun" id="he" value="he/him" />
+                    <label class="form-check-label" for="he">He/him</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="pronoun" id="they" value="they/them" />
+                    <label class="form-check-label" for="they">They/them</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="pronoun" id="prefer" value="prefer not to say" />
+                    <label class="form-check-label" for="prefer">Prefer not to say</label>
+                </div>
+                </fieldset>
+
+                <div class="row mb-3">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </div>
+                <div class="col-6">
+                    <button type="reset" class="btn btn-secondary w-100">Reset</button>
+                </div>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
   </body>
 </html>
