@@ -22,3 +22,7 @@
 .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
+
+header {
+  background: linear-gradient(135deg, #f7faff, #788ae5);
+}
