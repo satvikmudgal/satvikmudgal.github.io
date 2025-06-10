@@ -26,3 +26,21 @@
 header {
   background: linear-gradient(135deg, #f7faff, #788ae5);
 }
+
+#about {
+  background: linear-gradient(135deg, #788ae5, #f7faff);
+  color: darkslategray;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+section:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#about-me-text {
+  padding-top: 10px;
+}
