@@ -27,50 +27,85 @@ export const projects: Project[] = [
   // ------------------------------------------------------------------ Full Stack
   {
     title: "Track and Sort",
-    subtitle: "Local-first cross-platform desktop app",
+    subtitle: "A lifestyle analysis tool - Full-Stack | Cross-Platform",
     status: "In development · Private",
     category: "Full Stack",
     languages: ["TypeScript", "Python"],
     description:
-      "A frictionless lifestyle-analysis tool for tracking any facet of life from one interface. Its core is a single schema-driven engine: every domain is described once as a set of fields, and that definition powers storage, adaptive forms, faceted and natural-language search, a local analytics engine, and AI capture — so adding a new domain is a data change, not a feature build. A bundled Python AI sidecar (Gemini 2.5 Flash) drafts structured entries from plain English, links, or screenshots, always human-in-the-loop.",
+      "A frictionless and cohesive productivity tool for tracking any facet of life using one interface. Its core is a single schema-driven engine: every lifestyle domain is described once as a set of fields, and that definition powers storage, adaptive forms, faceted and natural-language search, a local analytics engine, and AI capture — so adding a new domain is a data change, not a feature build. A bundled Python AI sidecar (Gemini 2.5 Flash) drafts structured entries from plain English, links, or screenshots, always human-in-the-loop.",
     tags: [
       "Electron",
       "Next.js",
       "React",
       "TypeScript",
+      "Python",
       "FastAPI",
       "Gemini",
       "SQLite",
       "PostgreSQL",
     ],
-  },
-  {
-    title: "Airline Reservation",
-    subtitle: "Full-stack airline system · The Joy of Coding (Java), PSU",
-    status: "Coursework",
-    category: "Full Stack",
-    languages: ["Java"],
-    description:
-      "A multi-part airline reservation system built across a term of Java projects: a core domain model (flights, airports, airlines), text-file and XML persistence, a pretty-printed reporting layer, a REST web service on Jetty, and an Android client — all built with Maven, JUnit test-driven development, and continuous integration.",
-    tags: ["Java", "Android", "REST", "Jetty", "Maven", "JUnit", "XML"],
-    // No link: private course repo.
+    badges: ["In Development", "Private"],
+    // Placeholder carousel images (reusing research photos) — swap for real
+    // app screenshots or a <video> later.
+    images: [
+      {
+        src: "/presentation-1.jpg",
+        alt: "Track and Sort — placeholder preview 1",
+      },
+      {
+        src: "/presentation-2.jpg",
+        alt: "Track and Sort — placeholder preview 2",
+      },
+      {
+        src: "/PSU-Research-Showcase-2024.jpg",
+        alt: "Track and Sort — placeholder preview 3",
+      },
+      {
+        src: "/PSU-STEM-Annual-Poster-Competition.jpg",
+        alt: "Track and Sort — placeholder preview 4",
+      },
+    ],
+    details: [
+      {
+        title: "Tech Stack",
+        body: "Electron + Nextron shell with a Next.js / React / TypeScript renderer and Tailwind CSS for a runtime-themed UI (20 themes). The main process uses better-sqlite3 (local SQLite in WAL mode) with a Postgres-ready sync path and argon2 password hashing. A separate Python FastAPI sidecar runs Google Gemini 2.5 Flash, validated with Pydantic.",
+      },
+      {
+        title: "The Core Idea — One Schema, Every Domain",
+        body: "A domain is just data: describe its fields once and the whole feature set lights up automatically — a typed SQLite table with on-demand migrations, an adaptive add-form, faceted and natural-language search, the memory/analytics engine, and AI capture. Adding a new domain (career, fitness, finance, …) is a data change, not a feature build.",
+      },
+      {
+        title: "AI Capture (Human-in-the-Loop)",
+        body: "Every AI feature funnels through one local gateway with a single request/response shape. It drafts a structured entry from plain English, a pasted link, or a screenshot — assembling the active domain's schema and a data snapshot server-side — then opens the normal review form. Nothing is written until you confirm.",
+      },
+      {
+        title: "Privacy & Persistence",
+        body: "Local-first by design: data lives in an on-device SQLite database, isolated per user. Auth uses argon2 hashing with an OS-backed encrypted token store (Electron safeStorage). A Postgres driver is already wired in for an optional, end-to-end-encrypted cloud sync.",
+      },
+      {
+        title: "Status & Roadmap",
+        body: "Actively in development. Available today: manual and AI-assisted entry, faceted and natural-language search, the analytics engine, and 20 themes. On the way: a charts/reports dashboard, one-click domain-aware AI generators (résumé, recipes, spending analysis, workout plans), and cloud sync.",
+      },
+    ],
   },
   {
     title: "AI Fishbowl",
-    subtitle: "PSU CS Capstone · lead contributor · deployed on campus",
+    subtitle:
+      "An AI University Assistant - Deployed on NVIDIA Jetson Orin Nano | Local Inference",
     status: "Capstone",
     category: "Full Stack",
     languages: ["JavaScript", "Python", "HTML/CSS"],
     description:
-      "A voice-driven conversational-AI installation — a talking digital fish in an on-screen aquarium — built as a Portland State University CS capstone and deployed on campus. Users speak to it and it answers aloud: real-time Google Cloud speech-to-text feeds a Gemini 2.5 Flash agent backed by a retrieval-augmented (RAG) knowledge base for PSU CS questions, with Google Cloud text-to-speech and a PixiJS-animated fish reacting in sync. Built on a modular, MCP-style FastAPI backend with an Electron frontend running on edge hardware.",
+      "A voice-driven conversational-AI installation - a talking digital fish in an on-screen aquarium — built as a Portland State University CS capstone and deployed on campus. Users speak to it and it answers aloud: real-time Google Cloud speech-to-text feeds a Gemini 2.5 Flash agent backed by a retrieval-augmented (RAG) knowledge base for PSU CS questions, with Google Cloud text-to-speech and a PixiJS-animated fish reacting in sync. Built on a modular, MCP-style FastAPI backend with an Electron frontend running on edge hardware.",
     tags: [
       "Python",
       "JavaScript",
       "FastAPI",
-      "Gemini + RAG",
+      "RAG",
       "Electron",
-      "PixiJS",
+      "MCP",
       "Speech (STT/TTS)",
+      "ChromaDB",
     ],
     links: [
       {
@@ -85,6 +120,17 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    title: "Airline Reservation",
+    subtitle: "Full-stack airline system · The Joy of Coding (Java), PSU",
+    status: "Coursework",
+    category: "Full Stack",
+    languages: ["Java"],
+    description:
+      "A multi-part airline reservation system built across a term of Java projects: a core domain model (flights, airports, airlines), text-file and XML persistence, a pretty-printed reporting layer, a REST web service on Jetty, and an Android client — all built with Maven, JUnit test-driven development, and continuous integration.",
+    tags: ["Java", "Android", "REST", "Jetty", "Maven", "JUnit", "XML"],
+    // No link: private course repo.
+  },
 
   // -------------------------------------------------------------------------- AI
   {
@@ -94,7 +140,13 @@ export const projects: Project[] = [
     languages: ["Python", "JavaScript"],
     description:
       "A travel-planning assistant powered by Google Gemini function calling and React. An agentic loop decides when to search for flights, hotels, and activities via the Amadeus API across multiple iterations. I designed the prompt system and built the Flask backend.",
-    tags: ["Python", "Flask", "React", "Gemini function calling", "Amadeus API"],
+    tags: [
+      "Python",
+      "Flask",
+      "React",
+      "Gemini function calling",
+      "Amadeus API",
+    ],
     links: [
       {
         label: "GitHub",
@@ -163,7 +215,13 @@ export const projects: Project[] = [
     languages: ["Python"],
     description:
       "A study of transformer mechanics: visualizing and interpreting attention layers in an encoder-only model (DistilBERT) to trace how global versus local attention aggregates context, and analyzing decoding controls — causal masking, temperature, and top-k / top-p sampling — via the Transformer Explainer.",
-    tags: ["Transformers", "Attention", "DistilBERT", "Tokenization", "Sampling"],
+    tags: [
+      "Transformers",
+      "Attention",
+      "DistilBERT",
+      "Tokenization",
+      "Sampling",
+    ],
     // No link: local coursework.
   },
   {

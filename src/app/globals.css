@@ -895,3 +895,233 @@ html {
     animation: none;
   }
 }
+
+/* Project detail overlay — two-column layout */
+.modal-panel--project {
+  max-width: 60vw;
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal-panel--info-only {
+  max-width: 640px;
+}
+
+.project-modal {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  max-height: 85vh;
+}
+
+.project-modal--single {
+  grid-template-columns: 1fr;
+}
+
+.project-modal__media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.5rem;
+  overflow: hidden;
+  /* Margin around the carousel matches the theme background */
+  background: var(--bg);
+}
+
+.project-modal__info {
+  padding: 2.5rem;
+  overflow-y: auto;
+  max-height: 85vh;
+}
+
+.project-modal__title {
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  padding-right: 1.5rem;
+}
+
+.project-modal__subtitle {
+  font-size: 0.85rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-top: 0.35rem;
+}
+
+/* Status / action chips */
+.project-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.chip {
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.7rem;
+  border-radius: 2px;
+  border: 1px solid rgba(var(--accent-rgb), 0.35);
+  color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.08);
+  white-space: nowrap;
+}
+
+a.chip--action {
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    opacity 0.2s ease;
+}
+
+a.chip--action:hover {
+  background: rgba(var(--accent-rgb), 0.18);
+}
+
+/* Project Information */
+.project-info {
+  margin-top: 2rem;
+}
+
+.project-info__heading {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 400;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.15);
+}
+
+.project-info__summary {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text);
+  opacity: 0.8;
+  margin-top: 1.25rem;
+}
+
+.project-info__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #0a0a0a;
+}
+
+.carousel--empty {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.carousel__viewport {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.carousel__nav:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel__nav--prev {
+  left: 0.6rem;
+}
+
+.carousel__nav--next {
+  right: 0.6rem;
+}
+
+.carousel__dots {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.4rem;
+}
+
+.carousel__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.carousel__dot.is-active {
+  background: #fff;
+}
+
+.carousel__counter {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.8rem;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+}
+
+@media (max-width: 760px) {
+  .modal-panel--project {
+    max-width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
+  .project-modal {
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
+
+  .project-modal__info {
+    max-height: none;
+  }
+}

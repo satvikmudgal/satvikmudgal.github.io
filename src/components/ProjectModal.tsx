@@ -2,13 +2,19 @@
 
 import { useEffect, useRef } from "react";
 import type { Project } from "@/lib/types";
-import { LinkButton } from "./LinkButton";
-import { TagList } from "./TagList";
+import { Carousel } from "./Carousel";
+import { DetailCard } from "./DetailCard";
+import { SmartLink } from "./SmartLink";
 
 /**
- * Overlay showing a project's full details. Rendered only while a project is
- * selected. Handles Escape, backdrop click, body scroll lock, initial focus,
- * focus restoration, and a basic focus trap.
+ * Project detail overlay. Two columns on desktop: an image carousel on the
+ * left, and on the right — status chips, a "Project Information" summary, and
+ * any number of expandable, scrollable detail dropdowns (customizable per
+ * project via `project.details`). Collapses to a single column on mobile, and
+ * to an info-only layout when a project has no images.
+ *
+ * Handles Escape, backdrop click, body scroll lock, initial focus, focus
+ * restoration, and a basic focus trap.
  */
 export function ProjectModal({
   project,
@@ -56,11 +62,14 @@ export function ProjectModal({
     };
   }, [onClose]);
 
+  const hasMedia = Boolean(project.images && project.images.length > 0);
+  const hasDetails = Boolean(project.details && project.details.length > 0);
+
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div
         ref={panelRef}
-        className="modal-panel"
+        className={`modal-panel modal-panel--project${hasMedia ? "" : " modal-panel--info-only"}`}
         role="dialog"
         aria-modal="true"
         aria-labelledby="project-modal-title"
@@ -76,28 +85,55 @@ export function ProjectModal({
           ×
         </button>
 
-        <div className="project-header">
-          <h3 id="project-modal-title" className="project-title">
-            {project.title}
-          </h3>
-          {project.status && (
-            <span className="project-status">{project.status}</span>
+        <div className={`project-modal${hasMedia ? "" : " project-modal--single"}`}>
+          {hasMedia && (
+            <div className="project-modal__media">
+              <Carousel images={project.images!} />
+            </div>
           )}
-        </div>
-        {project.subtitle && (
-          <p className="project-subtitle">{project.subtitle}</p>
-        )}
-        <p className="modal-desc">{project.description}</p>
-        {project.tags && project.tags.length > 0 && (
-          <TagList items={project.tags} />
-        )}
-        {project.links && project.links.length > 0 && (
-          <div className="project-links">
-            {project.links.map((link) => (
-              <LinkButton key={link.href} {...link} />
-            ))}
+
+          <div className="project-modal__info">
+            <h3 id="project-modal-title" className="project-modal__title">
+              {project.title}
+            </h3>
+            {project.subtitle && (
+              <p className="project-modal__subtitle">{project.subtitle}</p>
+            )}
+
+            {(project.badges?.length || project.links?.length) && (
+              <div className="project-chips">
+                {project.badges?.map((badge) => (
+                  <span key={badge} className="chip">
+                    {badge}
+                  </span>
+                ))}
+                {project.links?.map((link) => (
+                  <SmartLink
+                    key={link.href}
+                    href={link.href}
+                    external={link.external}
+                    className="chip chip--action"
+                  >
+                    {link.label} ↗
+                  </SmartLink>
+                ))}
+              </div>
+            )}
+
+            <section className="project-info">
+              <h4 className="project-info__heading">Project Information</h4>
+              <p className="project-info__summary">{project.description}</p>
+
+              {hasDetails && (
+                <div className="project-info__details">
+                  {project.details!.map((detail) => (
+                    <DetailCard key={detail.title} {...detail} />
+                  ))}
+                </div>
+              )}
+            </section>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

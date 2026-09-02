@@ -56,12 +56,21 @@ export interface Project {
   tags?: string[];
   /** Repo / demo / write-up links. Omit to show no links (e.g. a private repo). */
   links?: Link[];
-  /** Small status badge, e.g. "In development" or "Private repo". */
+  /** Small status badge on the card, e.g. "In development" or "Coursework". */
   status?: string;
   /** Which group the card is shown under. */
   category?: ProjectCategory;
   /** Languages used, matching the filter-chip labels (for the language filter). */
   languages?: string[];
+  /** Status/label chips shown at the top-right of the detail overlay. */
+  badges?: string[];
+  /** Carousel images shown on the left of the detail overlay. */
+  images?: ImageAsset[];
+  /**
+   * Expandable "Project Information" dropdowns — customizable per project.
+   * Each item's `title` is the dropdown label; `body` is the expanded content.
+   */
+  details?: DetailItem[];
 }
 
 /** A named group of skills for the Skills section. */
