@@ -20,6 +20,7 @@ export function Hero() {
             </SmartLink>
           ))}
         </div>
+        <p className="hero-status">In Development</p>
       </div>
     </main>
   );
