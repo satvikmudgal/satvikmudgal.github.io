@@ -172,6 +172,22 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "Retrieval-Augmented QA (RAG)",
+    subtitle: "CS510 LLM Agents · Group project — DSPy pipeline & Streamlit UI",
+    category: "AI",
+    languages: ["Python"],
+    description:
+      "A retrieval-augmented generation (RAG) question-answering system over document corpora — including the RAG-QA and BioASQ (biomedical) datasets — with a Streamlit interface and a local Ollama (llama3.2:3b) backend. I built the DSPy-based PDF RAG pipeline — chunking and embedding PDFs into a Chroma vector store, retrieving top-k context, and generating chain-of-thought answers with Gemini 2.0 Flash — plus the project's Streamlit UI.",
+    tags: ["Python", "RAG", "DSPy", "LangChain", "Chroma", "Gemini", "Streamlit"],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/planetaska/rag6",
+        external: true,
+      },
+    ],
+  },
+  {
     title: "LLM Sentiment Analysis with LoRA Adapters",
     subtitle: "CS410 Large Language Models · Portland State University",
     status: "Coursework",

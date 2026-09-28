@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
+import { Analytics } from "@/components/Analytics";
 import { site } from "@/data/site";
 import "./globals.css";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <Analytics />
         <Navbar />
         {children}
       </body>

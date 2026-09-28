@@ -3,6 +3,7 @@
 import { useId, useMemo, useState } from "react";
 import { projectCategories, projectLanguages } from "@/data/projects";
 import type { Project } from "@/lib/types";
+import { trackEvent } from "@/lib/analytics";
 import { ProjectModal } from "./ProjectModal";
 import { TagList } from "./TagList";
 
@@ -95,7 +96,12 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
                       className="project-open"
                       aria-labelledby={titleId}
                       aria-haspopup="dialog"
-                      onClick={() => setActive(project)}
+                      onClick={() => {
+                        trackEvent("view_project_details", {
+                          project_title: project.title,
+                        });
+                        setActive(project);
+                      }}
                     >
                       View details →
                     </button>

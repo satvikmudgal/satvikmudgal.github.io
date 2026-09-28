@@ -7,11 +7,12 @@ import { DetailCard } from "./DetailCard";
 import { SmartLink } from "./SmartLink";
 
 /**
- * Project detail overlay. Two columns on desktop: an image carousel on the
- * left, and on the right — status chips, a "Project Information" summary, and
- * any number of expandable, scrollable detail dropdowns (customizable per
- * project via `project.details`). Collapses to a single column on mobile, and
- * to an info-only layout when a project has no images.
+ * Project detail overlay. A large panel that fills most of the screen (with a
+ * margin revealing the page behind it) and stacks two rows split ~50-50 by
+ * height: a wide landscape media band on top, and below it — status chips, a
+ * "Project Information" summary, and any number of expandable detail dropdowns
+ * (customizable per project via `project.details`) laid out across the pane.
+ * Falls back to an info-only layout when a project has no images.
  *
  * Handles Escape, backdrop click, body scroll lock, initial focus, focus
  * restoration, and a basic focus trap.

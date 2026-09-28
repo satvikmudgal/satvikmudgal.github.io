@@ -28,6 +28,7 @@ internal GitLab · ⚠️ excluded.
 |---|---------|------|-----|--------------------------|
 | 3 | **Travel Assistant (LLM Agent)** | llmagent-assignment2 | 🌐 | Python, Flask, React/Vite; Google Gemini **function calling**; Amadeus API (flights/hotels/activities); agentic loop; IATA code conversion. Satvik's role: prompt system + backend. Skills: LLM tool-use agents, prompt engineering, REST integration. |
 | 4 | **Agentic Brochure Generator** | llmagent-assignment3 | 🌐 | Python; **Model Context Protocol (MCP)** client + server; Gemini; Unsplash API. Skills: MCP tool/server design, agentic content generation. |
+| 4b | **Retrieval-Augmented QA (RAG)** (CS510 LLM Agents, group) | planetaska/rag6 | 🌐 public | DSPy PDF-RAG pipeline (LangChain chunking → **Chroma** vector store → top-k retrieval → **chain-of-thought** via **Gemini 2.0 Flash**) + **Streamlit** UI, over RAG-QA and BioASQ (biomedical) corpora; broader group system also uses BGE embeddings + Ollama (llama3.2:3b). Satvik: Question 3 + Streamlit UI. Skills: RAG, vector search, DSPy, LangChain, prompt engineering. |
 | 5 | **AI Usage Optimization** | ai-usage-optimization | 🔒 | Shell benchmarking; dataset + taxonomy from real agent conversation logs (rating references, intent buckets, pattern tests). Skills: data analysis, evaluation/benchmark design, LLM-usage analytics. ⚠️ contains personal prompt logs — describe concept only. |
 
 ## 3. Research
@@ -164,7 +165,7 @@ Each lab folder is a distinct, self-describing web skill:
 
 **Databases:** PostgreSQL · SQLite · MySQL · query optimization · fine-grained access control
 
-**AI / LLM:** Gemini function calling · agentic loops · Model Context Protocol (MCP) · prompt engineering · human-in-the-loop design · OCR/vision capture · deep learning (CS410) · LLM-usage benchmarking · **LoRA / PEFT fine-tuning** · Hugging Face Transformers · OpenAI API · transformer internals & attention · in-context learning (zero/few-shot) · LLM agents (Zork benchmarking)
+**AI / LLM:** Gemini function calling · agentic loops · Model Context Protocol (MCP) · prompt engineering · human-in-the-loop design · OCR/vision capture · deep learning (CS410) · LLM-usage benchmarking · **LoRA / PEFT fine-tuning** · Hugging Face Transformers · OpenAI API · transformer internals & attention · in-context learning (zero/few-shot) · LLM agents (Zork benchmarking) · RAG (retrieval-augmented generation) · DSPy · vector databases (Chroma) · chain-of-thought prompting
 
 **Systems / CS fundamentals:** processes & `fork` · IPC (pipes) · sockets/networking · concurrency · ciphers/encryption · archive/file formats · operating-systems concepts
 
