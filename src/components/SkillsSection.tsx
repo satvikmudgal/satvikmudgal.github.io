@@ -1,18 +1,26 @@
 import { skills } from "@/data/skills";
 import { SECTIONS } from "@/lib/sections";
 import { Section } from "./Section";
-import { TagList } from "./TagList";
 
-/** Skills grouped by area, rendered from the `skills` data array. */
+/**
+ * Skills rendered as four category cards. Each card flips its color profile and
+ * enlarges on hover (see `.skill-card` in globals.css).
+ */
 export function SkillsSection() {
   return (
     <Section id={SECTIONS.skills} title="Skills">
-      <div className="skills-grid">
+      <div className="skills-cards">
         {skills.map((group) => (
-          <div key={group.label} className="skill-group">
-            <h3 className="skill-group-title">{group.label}</h3>
-            <TagList items={group.items} />
-          </div>
+          <article key={group.label} className="skill-card">
+            <h3 className="skill-card__title">{group.label}</h3>
+            <ul className="skill-card__chips">
+              {group.items.map((item) => (
+                <li key={item} className="skill-chip">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </article>
         ))}
       </div>
     </Section>

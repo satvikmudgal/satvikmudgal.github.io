@@ -1,38 +1,70 @@
 import type { SkillGroup } from "@/lib/types";
 
 /**
- * Skills grouped by area. Every item here is evidenced by a real project or
- * course in the portfolio — keep it that way when editing.
+ * Skills grouped into category cards, rendered by SkillsSection. Keep every
+ * item evidenced by a real project or course in the portfolio.
  */
 export const skills: SkillGroup[] = [
   {
-    label: "Languages",
-    items: ["TypeScript", "JavaScript", "Python", "Java", "C", "SQL"],
+    label: "Programming Languages",
+    items: ["Java", "Python", "C", "C++", "JavaScript", "TypeScript", "SQL"],
   },
   {
-    label: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
-  },
-  {
-    label: "Backend & Desktop",
-    items: ["Node.js", "FastAPI", "Flask", "Electron"],
-  },
-  {
-    label: "Databases",
-    items: ["PostgreSQL", "SQLite", "MySQL", "Query optimization"],
-  },
-  {
-    label: "AI & LLM",
+    label: "Frameworks",
     items: [
-      "Gemini function calling",
-      "Agentic loops",
-      "MCP",
-      "Prompt engineering",
-      "Deep learning",
+      "REST",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Android",
+      "Electron",
+      "PixiJS",
+      "AnimeJS",
+      "Framer Motion",
+      "FastAPI",
+      "Flask",
     ],
   },
   {
-    label: "Security & Systems",
-    items: ["argon2 auth", "Access control", "Operating systems"],
+    label: "Databases",
+    items: [
+      "PostgreSQL",
+      "MySQL",
+      "SQLite",
+      "ChromaDB",
+      "Query Indexing",
+      "Fine-Grained Access Control",
+    ],
+  },
+  {
+    label: "Artificial Intelligence",
+    items: [
+      "PyTorch",
+      "TensorFlow",
+      "LangChain",
+      "RAG",
+      "DSPy",
+      "LoRA/PEFT",
+      "Model Context Protocol",
+      "Gemini Embeddings",
+      "Neural Network Design",
+    ],
+  },
+  {
+    label: "Tooling",
+    items: [
+      "Git",
+      "Linux",
+      "Docker",
+      "GCP",
+      "Maven",
+      "JUnit",
+      "Gemini 2.5 flash",
+      "CUDA",
+      "MPS",
+      "WebSockets",
+      "TCP/IP",
+      "Android Studio",
+    ],
   },
 ];

@@ -8,8 +8,8 @@ import type { NavItem } from "@/lib/types";
 export const navItems: NavItem[] = [
   { id: SECTIONS.about, label: "About" },
   { id: SECTIONS.experience, label: "Experience" },
-  { id: SECTIONS.skills, label: "Skills" },
   { id: SECTIONS.projects, label: "Projects" },
   { id: SECTIONS.openSource, label: "Open Source" },
+  { id: SECTIONS.skills, label: "Skills" },
   { id: SECTIONS.contact, label: "Contact" },
 ];

@@ -19,9 +19,9 @@ export default function Home() {
       <Partition />
       <AboutSection />
       <ExperienceSection />
-      <SkillsSection />
       <ProjectsSection />
       <OpenSourceSection />
+      <SkillsSection />
       <Footer />
     </>
   );

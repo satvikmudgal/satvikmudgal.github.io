@@ -7,7 +7,7 @@ import type { ContactConfig } from "@/lib/types";
  */
 export const contact: ContactConfig = {
   heading: "Contact",
-  lead: "Everything an application typically asks for, in one place. Placeholder fields are ready to fill in.",
+  lead: "Feel free to reach out and connect! I'm always looking for exciting opportunities :)",
   fields: [
     { label: "Name", value: "Satvik Mudgal" },
     {
@@ -15,8 +15,6 @@ export const contact: ContactConfig = {
       value: "satvik.mudgal@gmail.com",
       href: "mailto:satvik.mudgal@gmail.com",
     },
-    { label: "Phone", placeholder: "Add phone number" },
-    { label: "Location", placeholder: "Add location (city, state)" },
     {
       label: "LinkedIn",
       value: "linkedin.com/in/satvikmudgal",
@@ -29,11 +27,21 @@ export const contact: ContactConfig = {
       href: "https://github.com/satvikmudgal",
       external: true,
     },
-    { label: "Portfolio", placeholder: "Add portfolio / website URL" },
-    { label: "Résumé / CV", placeholder: "Add résumé link" },
-    { label: "Work Authorization", placeholder: "Add work authorization status" },
-    { label: "Availability", placeholder: "Add availability / earliest start date" },
-    { label: "Desired Role", placeholder: "Add target role(s)" },
+    {
+      label: "Résumé / CV",
+      placeholder: "Add résumé link",
+      value: "Download résumé (PDF)",
+      href: "/resume.pdf",
+      external: true,
+    },
+    {
+      label: "Work Authorization",
+      value: "US Citizen - Authorized to work anywhere in the US.",
+    },
+    {
+      label: "Availability",
+      value: "Available to work immediately",
+    },
     { label: "References", placeholder: "Available upon request" },
   ],
   privacyHref: "/privacy/",
